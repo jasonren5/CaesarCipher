@@ -18,14 +18,33 @@ if choice == 1:
     print("What message do you want to code?")
     msg = input();
     print(msg)
-    print("What is the value of your key?")
+    print("What is the value of your key (shift)?")
     key = int(input());
     for x in msg:
         x = x.lower()
-        print("x: " + x)
+        #print("x: " + x)
         newkey = key;
         if alphabet.index(x) + key > 25:
             newkey = key - 25
-        print(alphabet[alphabet.index(x) + newkey]) #x is a str
+        #print(alphabet[alphabet.index(x) + newkey])
         output += (alphabet[alphabet.index(x) + newkey])
-        print(output)
+    print("Your secret message is: " + output)
+
+if choice == 2:
+    output = ""
+    print("What message do you want to decode?")
+    msg = input();
+    print(msg)
+    print("What is the value of your key (shift)?")
+    key = int(input());
+    for x in msg:
+        x = x.lower()
+        #print("x: " + x)
+        newkey = key;
+        if alphabet.index(x) - key < 0:
+            newkey = key - 25
+        #print(alphabet[alphabet.index(x) - newkey])
+        output += (alphabet[alphabet.index(x) - newkey])
+    print("Your decoded message is: " + output)
+
+input("Press enter to exit.")
