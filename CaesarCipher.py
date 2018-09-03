@@ -1,9 +1,9 @@
 #Author: Jason Ren
-#Purpose: To teach Caesar Ciphers to young children
+#Purpose: To teach Caesar Ciphers (and basic programming concepts) to young[er] children
 #Programmed for use in Spytech camp for Lavner Camps and Programs, but is not owned
 #   or otherwise associated with Lavner Camps and Programs.
 
-choice = 3
+choice = 0
 alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 
 
